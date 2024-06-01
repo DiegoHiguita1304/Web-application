@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 
-import { ListComponent } from './domains/products/pages/list/list.component';
-import { AboutComponent } from './domains/info/pages/about/about.component';
-import {HeaderComponent} from './domains/shared/components/header/header.component'
+import { ListComponent } from '@products/pages/list/list.component';
+import { AboutComponent } from '@info/pages/about/about.component';
+import { NotFoundComponent } from '@info/pages/not-found/not-found.component';
+import {HeaderComponent} from '@shared/components/header/header.component';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,10 @@ export const routes: Routes = [
     {
         path: 'header',
         component: HeaderComponent
+    },
+    {
+        path: '**',
+        component: NotFoundComponent
     }
+
 ];
