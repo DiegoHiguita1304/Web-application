@@ -1,6 +1,6 @@
 import { Component, Input, SimpleChanges, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Product } from '../../models/product.models';
+import { Product } from '../../models/book.models';
 import { CartService } from './../../services/cart.service';
 import { RouterLinkWithHref, RouterLinkActive } from '@angular/router';
 

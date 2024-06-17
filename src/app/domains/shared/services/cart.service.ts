@@ -1,12 +1,12 @@
 import { Injectable, computed, signal } from '@angular/core';
-import { Product } from '../models/product.models';
+import { Book } from '../models/book.models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 
-  cart = signal<Product[]>([])
+  cart = signal<Book[]>([])
   total = computed(() => {
     const cart = this.cart();
     return cart.reduce((total, product) => total + product.price, 0);
@@ -14,7 +14,7 @@ export class CartService {
 
   constructor() { }
 
-  addToCart(product: Product) {
+  addToCart(product: Book) {
     this.cart.update(state => [...state, product]);
   }
 }

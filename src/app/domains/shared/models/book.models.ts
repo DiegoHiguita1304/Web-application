@@ -1,6 +1,6 @@
 import { Category } from "./category.model";
 
-export interface Product {
+export interface Book {
     id: number;
     title: string;
     description: string;

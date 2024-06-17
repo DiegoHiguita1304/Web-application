@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CommonModule} from '@angular/common'
+import { CommonModule} from '@angular/common';
+import { BookService } from '../../../services/bookService;
+import { Book } from '../../../models/book.model';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,5 @@ import { CommonModule} from '@angular/common'
   template: '<router-outlet />',
 })
 export class AppComponent {
-  title = 'store';
+  title = 'Libreria-Market';
 }

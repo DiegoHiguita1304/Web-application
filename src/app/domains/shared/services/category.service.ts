@@ -11,6 +11,6 @@ export class CategoryService {
   constructor() { }
 
   getAll() {
-    return this.http.get<Category[]>(`https://api.escuelajs.co/api/v1/categories`);
+    return this.http.get<Category[]>(``);
   }
 }

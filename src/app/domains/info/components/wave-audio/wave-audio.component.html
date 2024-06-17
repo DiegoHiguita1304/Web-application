@@ -1,11 +1,8 @@
+<!-- wave-audio.component.html -->
 <div>
     <div #wave></div>
     <button (click)="playPause()">
-        @if (isplaying()) {
-        <span>Pause</span>
-        } @else {
-        <span>Play</span>
-        }
+        <span *ngIf="isPlaying">Pause</span>
+        <span *ngIf="!isPlaying">Play</span>
     </button>
-
 </div>
